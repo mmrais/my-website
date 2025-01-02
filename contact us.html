@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            background-color: #212121;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #000;
+            border-bottom: 3px solid #ff5500; /* Adding a contrast border to create a gamer look */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .navbar .navbar-nav .nav-item {
+            position: relative;
+            animation: slideIn 1s ease-out;
+        }
+        .navbar a.nav-link {
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        .navbar a.nav-link:hover {
+            color: #ff5500; /* Highlight on hover */
+            text-shadow: 0 0 10px rgba(255, 85, 0, 1), 0 0 20px rgba(255, 85, 0, 1);
+        }
+        /* Animations for navbar options */
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-30px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        /* Motion effects */
+        .navbar-nav .nav-item:nth-child(1) {
+            animation: fadeInUp 1.5s ease-out;
+        }
+        .navbar-nav .nav-item:nth-child(2) {
+            animation: bounceIn 1.5s ease-out;
+        }
+        .navbar-nav .nav-item:nth-child(3) {
+            animation: rotateIn 1.5s ease-out;
+        }
+        .navbar-nav .nav-item:nth-child(4) {
+            animation: zoomIn 1.5s ease-out;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeInUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes bounceIn {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes rotateIn {
+            0% {
+                transform: rotate(-30deg);
+                opacity: 0;
+            }
+            100% {
+                transform: rotate(0deg);
+                opacity: 1;
+            }
+        }
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Background image for contact section */
+        #contact {
+            background: url('https://wallpapercave.com/wp/wp5187881.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 80px 20px;
+            background-attachment: fixed;
+            height: 100vh;
+            animation: fadeIn 3s ease-out;
+        }
+
+        .contact-description {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Animation for fading in the content */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .social-links a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 30px;
+            animation: bounce 1s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Centered navbar brand */
+        .navbar-brand {
+            text-align: center;
+            width: 100%;
+            animation: slideIn 2s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="New folder/Opera Snapshot_2025-01-01_193457_pbs.twimg.com.png" alt="Logo" style="height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="players.html" target="_blank">Players</a></li>
+                    <li class="nav-item"><a class="nav-link" href="matches.html" target="_blank">Matches</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section text-center">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p class="contact-description">We’d love to hear from you! Connect with us through our platforms below.</p>
+
+            <!-- WhatsApp Link with Logo -->
+            <p><a href="https://wa.me/0656992149" class="btn btn-success" style="animation: fadeInUp 1.5s ease-out;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" style="height: 20px; margin-right: 10px;">
+                WhatsApp: +212656992149
+            </a></p>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/mr_gt57/" target="_blank" style="animation: bounce 2s ease-in-out infinite;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- WhatsApp Icon with Link -->
+                <a href="https://whatsapp.com/channel/0029Vai9Ta3B4hdMmzKi6N33" target="_blank" style="animation: bounce 2s ease-in-out infinite;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" style="height: 30px; margin-right: 10px;">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2025 StartUp. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
